@@ -1,0 +1,141 @@
+/* This part is for the sizing of the box model */
+* {
+  box-sizing: border-box;
+    margin: 0;
+        padding: 0;
+}
+
+/* This part is for the styling and fonts throughout all the pages, I thought that times new roman and the other fonts would fit well on the website keeping a classy feel with a classier */
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+    line-height: 1.6;
+  background-color: #f4f6f8;
+      color: #333;
+}
+
+/* Header and navigation section, I decided to make this green to match with the LiveGreen name and brand identity that im going for */
+.site-header {
+  background-color: #31803c;
+    color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation list of the website, this part uses flexbox, the rest helps with style and makes it look a lot cleaner */
+/* I got some help from ChatGPT here as well as I needed some help with the navigation list styling exactly where I wanted it */
+.nav-list {
+  list-style: none;
+   display: flex;
+    gap: 1rem;
+}
+
+.nav-list a {
+  color: white;
+   text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* This section is for the Hero of the page, giving it a different background colour then the rest*/
+.hero {
+  padding: 3rem 2rem;
+    text-align: center;
+    background-color: #e5e7eb;
+}
+
+/* This part displays the CSS grid and creates 3 columns allowing for a clean look */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+       padding: 2rem;
+}
+
+/* THis is the section for the card styling*/
+.card {
+  background-color: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+        margin: 0.5rem;
+}
+
+  .team-flex {
+  display: flex;
+  gap: 1.5rem;
+      padding: 2rem;
+}
+
+.about-section { 
+  padding: 3rem 2rem;
+    text-align: center;
+      background-color: #e5e7eb
+}
+
+.landing { 
+  padding: 3rem 2rem;
+  text-align: center;
+      background-color: #e5e7eb
+}
+
+/* Styles of the forms throughout the pages, adding spacing and centring */
+  .form-section {
+  padding: 2rem;
+max-width: 600px;
+      margin: auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+  input,
+textarea {
+  width: 100%;
+    padding: 0.5rem;
+      border: 1px solid #ccc;
+}
+
+  button {
+  background-color: #31803c;
+  color: white;
+      border: none;
+        padding: 0.75rem 1.5rem;
+          cursor: pointer;
+}
+
+button:hover {
+  background-color: #31803c;
+}
+
+/* Site footer design and style, same colour as the rest of the webiste to keep it consistent, simple text centreing and spacing keeping consistent with the header as well */
+  .site-footer {
+  background-color: #31803c;
+    color: white;
+      text-align: center;
+      padding: 1rem;
+          margin-top: 2rem;
+}
+
+/* this part centers the image and keeps the image size how Ii wanted it*/
+/* I will also note I got ChatGpt to help with the sizing and centering of the image as I couldnt figure it out at first but I understand the concept now */
+.center-image {
+    text-align: center; /* centers the heading */
+}
+
+.center-image img {
+    max-width: 300px;
+    width: 100%;
+        height: auto;
+          border: 1px solid #31803c;
+          padding: 10px;
+}
